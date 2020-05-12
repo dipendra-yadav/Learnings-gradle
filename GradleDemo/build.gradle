@@ -1,0 +1,20 @@
+//apply  plugin: 'java'  
+apply plugin: 'application'   // by default application will include java plugin as well
+
+
+
+repositories{
+
+    mavenCentral()   //Look for maven central repositoy for all dependencies
+}
+
+dependencies{
+   //adding a compile time dependency
+   compile  "joda-time:joda-time:2.2"
+
+
+}
+
+
+
+mainClassName = 'com.demo.HelloGradle'      //executable class
